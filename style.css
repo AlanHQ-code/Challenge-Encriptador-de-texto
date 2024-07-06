@@ -1,0 +1,223 @@
+*{
+    background:#F3F5FC;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    margin: auto;       
+}
+
+
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 10%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 180px;
+    justify-content: center;
+}
+
+.text-area {
+    height: 400px;
+    width: 680px;
+    border: none;
+    color: #0A3871;
+    margin-top: 30px;
+    padding: 2px;
+    
+}
+::placeholder { color: #0A3871; }
+.text-area:focus {
+    outline: none;
+}
+
+.mensaje{
+    height: 550px;
+    background: white;
+    background-image: url("./imagenes/ojo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 32px;
+    color: #0A3871;
+    margin-left: 50px;
+    padding-left: 20px;
+    padding-top: 15px;
+    position: center;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.mensaje:focus {
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 16px;
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+.Encriptar {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    font-size: 16px;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.Desencriptar {
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    font-size: 16px;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.cambio{
+    background: transparent;
+    margin-left: 65px;
+    margin-top: -130px;
+    width: 360px;
+    position: absolute;
+    text-align: center;
+}
+
+.cambio__titulo{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: initial;
+    background: transparent;
+}
+
+.cambio__texto{
+    font-size: 16px;
+    line-height: initial;
+    background: transparent;
+}
+
+.Copiar{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-top: 30px;
+    margin-left: 12px;
+    position: absolute;
+    width: 336px;
+    font-size: 16px;
+}
+
+.Encriptar:hover, .Desencriptar:hover, .Copiar:hover{
+    background: #65686d;
+    color: white;
+}
+
+.aviso{
+    color: #495057;
+    font-size:12px;
+    margin: auto;
+}
+
+.footer{
+    text-align: center;
+    background-color: #0A3871;
+    padding: 15px;
+}
+.footer__texto{
+    color: #D8DFE8;
+    background: transparent;
+    font-size: 15px;
+    margin: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+    .logo{
+        width: 15%;
+        margin-top: 60px;
+    } 
+    main{
+        display: flex;
+        margin: 0px 30px;
+        flex-direction: column;
+        margin-left: 40px;
+       }
+    .text-area{
+        width: 688px;
+        height: 500px;
+    }
+    .botones{
+        margin-bottom: 64px;
+    }
+    .mensaje{
+        background-image: none;
+        height: 133px;
+        width: 688px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .cambio{
+        width: 624px;
+        margin-top: -110px;
+        margin-left: 35px;
+    }
+    .cambio__titulo{
+        text-align: center;
+    }
+    .Copiar{
+        margin-top: auto;
+        margin-left: 330px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .logo{
+        width: 40%;
+        margin-top: 24px;
+        margin-left: auto;
+        margin-bottom: 24px;
+    }
+    main{
+        margin-left: 16px;
+    }
+    .text-area{
+        width: 343px;
+        height: 300px;
+    }
+    .botones{
+        flex-direction: column;
+    }
+    .mensaje{
+        width: 327px;
+        height: 186px;
+    }
+    .cambio{
+        width: 263px;
+        margin-top: -175px;
+        margin-left: 35px;
+    }
+    .Encriptar{
+        width: 343px;
+        margin: auto;
+    }
+    .Desencriptar{
+        width: 343px;
+        margin: auto;
+    }
+    .Copiar{
+        margin-top: 70px;
+        margin-left: auto;
+        width: 280px;
+        height: 50px;
+    }
+}
